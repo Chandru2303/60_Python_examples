@@ -721,3 +721,78 @@ b = 200
 if b > a:
   pass
 ```
+
+#
+
+# Python While Loops
+
+## Python Loops
+
+Python has two primitive loop commands:
+
+- **while loops**
+- **for loops**
+
+### The while Loop
+
+With the `while` loop, we can execute a set of statements as long as a condition is true.
+
+#### Example 1: Print `i` as long as `i` is less than 6:
+
+```python
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+```
+
+**Note**: Remember to increment `i`, or else the loop will continue forever.
+
+The `while` loop requires relevant variables to be ready. In this example, we need to define an indexing variable, `i`, which we set to 1.
+
+### The break Statement
+
+With the `break` statement, we can stop the loop even if the `while` condition is true.
+
+#### Example 2: Exit the loop when `i` is 3:
+
+```python
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+```
+
+### The continue Statement
+
+With the `continue` statement, we can stop the current iteration and continue with the next one.
+
+#### Example 3: Continue to the next iteration if `i` is 3:
+
+```python
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+```
+
+### The else Statement
+
+With the `else` statement, we can run a block of code once the condition no longer is true.
+
+#### Example 4: Print a message once the condition is false:
+
+```python
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+```
+
+
